@@ -4,6 +4,7 @@ namespace math {
     //% blockid=Bmath_numxor
     //% block="Xor $nma ^ $nmb"
     //% group="Bmath-xor"
+    //% inlineInputMode=inline
     export function NumXor(nma: number, nmb: number): number {
         return nma ^ nmb
     }
@@ -11,13 +12,15 @@ namespace math {
     //% blockid=Bmath_charidx
     //% block="Char code in $txt at $cidx"
     //% group="Bmath-CharCodeIndex"
+    //% inlineInputMode=inline
     export function CharIdxAt(txt: string, cidx: number): number {
         return txt.charCodeAt(cidx)
     }
 
     //% blockid=Bmath_percentage
     //% block="GetPercentage in $value and $maxValue from $maxPercentage"
-    //% group="Bmath-CharCodeIndex"
+    //% group="Bmath-percentage"
+    //% inlineInputMode=inline
     export function calculatePercentage(value: number, maxValue: number, maxPercentage: number): number {
         value = Math.min(value, maxValue)
         let percentage = (value / maxValue) * maxPercentage;
@@ -30,6 +33,7 @@ namespace math {
     //% blockid=Bmath_dec2base
     //% block="convert $nvl in base $bvl to digit $dvl"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function decEncode(nvl: number, bvl: number, dvl: number): string {
         let sti = ""
         let ani = nvl
@@ -55,6 +59,7 @@ namespace math {
     //% blockid=Bmath_base2dec
     //% block="convert $tvl to dec in $bvl"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function decDecode(tvl: string, bvl: number): number {
         let stl = tvl.length
         let vld = 0
@@ -76,6 +81,7 @@ namespace math {
     //% blockid=Bmath_decsum
     //% block="sum decimal in $nvl and $bvl"
     //% group="Bmath-DecBase-sum"
+    //% inlineInputMode=inline
     export function sumDecimal(nvl: number, bvl: number): number {
         let dvl = 0
         while (nvl >= dvl) {
@@ -91,6 +97,7 @@ namespace math {
     //% blockid=Bmath_declensum
     //% block="Sum Digit At $nvl In $bvl"
     //% group="Bmath-DecBase-sum"
+    //% inlineInputMode=inline
     export function sumDecDigit(nvl: number, bvl: number): number {
         let dvl = 0
         let dvi = 0
@@ -109,6 +116,7 @@ namespace math {
     //% blockid=Bmath_binxor
     //% block="Bin Xor in $sva and $svb"
     //% group="Bmath-DecBase-xor"
+    //% inlineInputMode=inline
     export function BinXor(sva: string, svb: string): string {
         let tvl = ""
         if (sva.length != svb.length) {
@@ -127,6 +135,7 @@ namespace math {
     //% blockid=Bmath_dec2bin
     //% block="dec convert $nvl to bin in $dvl"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function dec2bin(nvl: number, dvl: number): string {
         let sti = ""
         let ani = nvl
@@ -152,6 +161,7 @@ namespace math {
     //% blockid=Bmath_bin2dec
     //% block="bin convert $tvl to dec"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function bin2dec(tvl: string): number {
         let stl = tvl.length
         let vld = 0
@@ -173,6 +183,7 @@ namespace math {
     //% blockid=Bmath_dec2hex
     //% block="dec convert $nvl to hex in $dvl"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function dec2hex(nvl: number, dvl: number): string {
         let sti = ""
         let ani = nvl
@@ -198,6 +209,7 @@ namespace math {
     //% blockid=Bmath_hex2dec
     //% block="hex convert $tvl to dec"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function hex2dec(tvl: string): number {
         let stl = tvl.length
         let vld = 0
@@ -219,6 +231,7 @@ namespace math {
     //% blockid=Bmath_dec2oct
     //% block="dec convert $nvl to oct in $dvl"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function dec2oct(nvl: number, dvl: number): string {
         let sti = ""
         let ani = nvl
@@ -244,6 +257,7 @@ namespace math {
     //% blockid=Bmath_oct2dec
     //% block="oct convert $tvl to dec"
     //% group="Bmath-DecBase"
+    //% inlineInputMode=inline
     export function oct2dec(tvl: string): number {
         let stl = tvl.length
         let vld = 0
