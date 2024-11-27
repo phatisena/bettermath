@@ -1,5 +1,5 @@
-//%inlineInputMode=inline
-namespace math {
+
+namespace Math {
 
     //% blockid=Bmath_numxor
     //% block="Xor $nma ^ $nmb"
